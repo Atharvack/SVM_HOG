@@ -124,6 +124,18 @@ git clone https://github.com/yourusername/SVM_HOG.git
 
 ---
 
+## Jupyter Notebooks
+
+<div id="notebook-content"></div>
+
+<script>
+  fetch('main.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('notebook-content').innerHTML = data;
+    });
+</script>
+
 
 
 ## License
