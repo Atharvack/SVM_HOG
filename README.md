@@ -100,7 +100,7 @@ The classifier maximizes the margin between class boundaries while handling misc
 **Clone the Repository:**
 
 ```bash
-git clone https://github.com/yourusername/SVM_HOG.git
+git clone https://github.com/Atharvack/SVM_HOG.git
 
 ```
 
@@ -125,6 +125,7 @@ git clone https://github.com/yourusername/SVM_HOG.git
 ---
 
 ## Jupyter Notebooks
+Predictions can be seen in the last block!
 
 <div id="notebook-content"></div>
 
