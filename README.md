@@ -1,17 +1,8 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" class="logo" width="120"/>
-
-# generate a good nice creative and visually appealing github readme for this project using the presentation I have attached.
-
----
-Below is a sample GitHub README that combines a clear project description with creative formatting and visually appealing elements. You can directly paste this into your README.md file and adjust it as needed.
-
----
 
 # Handwritten Equation Recognition using HOG \& SVM
 
 This repository contains a project for recognizing handwritten numerical equations by first segmenting images into meaningful regions (i.e., individual characters) and then classifying them using Histogram of Oriented Gradients (HOG) for feature extraction and a Polynomial Support Vector Machine (SVM) for classification.
 
-The project was developed as part of an ESE 590 Practical ML and AI course by Atharva Kulkarni and Anurag Chaturvedi. The approach leverages the efficiency of HOG descriptors and the robustness of SVM to achieve accurate image segmentation and classification.
 
 ---
 
@@ -27,9 +18,6 @@ The project was developed as part of an ESE 590 Practical ML and AI course by At
 - [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
-- [Results and Demo](#results-and-demo)
-- [Future Work](#future-work)
-- [Credits](#credits)
 - [License](#license)
 
 ---
@@ -99,55 +87,28 @@ Divides the image into cells, computes local histograms, normalizes over blocks,
 
 - **Support Vector Machines:**
 Utilizes a polynomial kernel SVM to project data into higher dimensions, making it linearly separable.
+
+
+
 - **Margin Optimization:**
 The classifier maximizes the margin between class boundaries while handling misclassified instances using custom hinge loss.
 
 ---
 
-## Installation
 
-1. **Clone the Repository:**
 
-```bash
-git clone https://github.com/yourusername/handwritten-equation-recognition.git
-cd handwritten-equation-recognition
-```
-
-2. **Install Dependencies:**
-
-Ensure you have Python 3.6+ installed. Then run:
+**Clone the Repository:**
 
 ```bash
-pip install -r requirements.txt
+git clone https://github.com/yourusername/SVM_HOG.git
+
 ```
 
-*Dependencies include:*
-    - PyTorch
-    - scikit-image
-    - NumPy
-    - pickle (standard library)
 
----
-
-## Usage
-
-Run the main testing script to load pre-trained features and the SVM model and test on images:
-
-```bash
-python main.py
-```
-
-For example, the script will process the input image, extract HOG features, and output the predicted class for each segmented character. The process includes:
-
-- Loading saved training parameters and classes.
-- Running an image through adaptive segmentation.
-- Extracting the feature vector and classifying with the trained SVM model.
-
----
 
 ## Project Structure
 
-A typical project layout is as follows:
+
 
 ```
 .
@@ -163,52 +124,11 @@ A typical project layout is as follows:
 
 ---
 
-## Results and Demo
 
-The model outputs feature vector sizes (e.g., 10800) and predicted classes for segmented images. Below are a few sample results (shown in the presentation):
-
-- **Sample Output:**
-Training Feature Vector Size: 10800
-Predicted Class: 9
-- **Visualization:**
-(Insert screenshots or GIFs of the segmented images and classification results here)
-
----
-
-## Future Work
-
-- **Enhanced Segmentation:**
-Experiment with more sophisticated segmentation methods to handle more diverse handwriting samples.
-- **Hybrid Models:**
-Integrate deep learning techniques (e.g., CNN-based classifiers) to further boost recognition accuracy.
-- **Real-Time Recognition:**
-Adapt the solution for real-time equation recognition applications and user interfaces.
-
----
-
-## Credits
-
-Developed as part of the ESE 590 Practical ML and AI Project by:
-
-- **Atharva Kulkarni**
-- **Anurag Chaturvedi**
-
-This project was inspired by the challenges of handwritten numerical equation recognition and leverages modern techniques in feature extraction and classification.
-
----
 
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
-
-This README provides an overview of the project, its methodology, and structure, offering a detailed guide for users and contributors. Enjoy exploring the project and feel free to contribute!
-
-<div style="text-align: center">⁂</div>
-
-[^1]: https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/33445794/9dd9a62f-770a-4731-bbba-ae9c9af79264/ESE590_HandwritingRecog.pptx
-
-[^2]: https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/33445794/9dd9a62f-770a-4731-bbba-ae9c9af79264/ESE590_HandwritingRecog.pptx
-
 
